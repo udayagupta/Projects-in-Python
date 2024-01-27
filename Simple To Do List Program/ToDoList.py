@@ -6,7 +6,7 @@ class Task:
     def __init__(self, title, description=None, dueDate=None) -> None:
         current_date_time = datetime.datetime.now()
         self.title = title
-        self.description = description
+        self.description = description "N/A"
         self.date_created = current_date_time.strftime("%d-%m-%Y")
         self.time_created = current_date_time.time().strftime("%I:%M:%S %p")
         self.due_date = dueDate
